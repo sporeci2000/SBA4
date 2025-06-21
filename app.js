@@ -26,6 +26,14 @@ function addTask() {
     clearForm();
 }
 
+
+function clearForm() {
+    document.getElementById("taskName").value = "";
+    document.getElementById("taskCategory").value = "";
+    document.getElementById("taskDeadline").value = "";
+    document.getElementById("taskStatus").value = "";
+}
+
 function checkOverdue(task) {
     const today = new Date().toISOString().split("T")[0];
     if (task.status !== "Completed" && task.deadline < today) {
