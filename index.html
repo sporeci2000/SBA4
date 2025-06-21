@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager APP</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <h1>My To-Do List</h1>
+    <div id="task-form">
+        <input type="text" id="taskName" placeholder="Enter Task Name" />
+        <input type="text" id="taskCategory" placeholder="Enter Category" />
+        <input type="date" id="taskDeadline" />
+        <select id="taskStatus">
+            <option value="" disabled selected>Select Status</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+            <option value="Overdue">Overdue</option>
+        </select>
+
+        <button id="addTaskButton">Add New Task</button>
+    </div>
+
+    <div id="task-filter">
+
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="School">School</option>
+            <option value="Fitness">Fitness</option>
+            <option value="Chores">Chores</option>
+            <option value="Health">Health</option>
+            <option value="Shopping">Shopping</option>
+        </select>
+
+        <label for="statusFilter">Filter by Status:</label>
+        <select id="statusFilter">
+            <option value="">All</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+            <option value="Overdue">Overdue</option>
+        </select>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+</body>
+
+</html>

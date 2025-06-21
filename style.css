@@ -1,0 +1,174 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffe6f0;
+    color: #000000;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #f959c4;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px #3e0321;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#task-form {
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(204, 51, 153, 0.2);
+    margin-bottom: 30px;
+}
+
+#task-form input,
+#task-form select,
+#task-form button {
+    padding: 10px;
+    margin: 8px 5px;
+    border: 1px solid #cc99cc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#task-form button {
+    background-color: #f959c4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#task-form button:hover {
+    background-color: #cc3399;
+}
+
+#task-filter {
+    margin-bottom: 20px;
+    background: #fff0f5;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(204, 51, 153, 0.2);
+    border-radius: 15px;
+}
+
+#task-filter label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#task-filter select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #cc99cc;
+    background-color: #fff0f5;
+
+}
+
+#task-filter label[for="statusFilter"] {
+    margin-left: 50px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(204, 51, 153, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.task strong {
+    color: #000000;
+    font-weight: 700;
+}
+
+.status-select {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #ffe6f0;
+    border: 1px solid #cc99cc;
+    margin-top: 10px;
+}
+
+
+.delete-btn {
+    background-color: #f959c4;
+    border: none;
+    color: #ffffff;
+    padding: 8px 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #cc3399;
+    color: white;
+}
+
+.edit-btn {
+  background-color: #f959c4;
+  border: none;
+  color: white;
+  padding: 8px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #ffb3d1;
+}
+
+.task-content {
+    flex: 1 1 60%;
+}
+
+.task-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 600px) {
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    #task-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    #task-filter label[for="statusFilter"] {
+        margin-left: 0;
+    }
+}
