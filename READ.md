@@ -11,7 +11,7 @@ I solved these issues by exploring JavaScript documentation, reading examples, a
 
 If I had more time, I would make the app even more user-friendly. For example, I’d improve how editing works by avoiding prompts and letting users update tasks directly in the list. I would also like to display tasks in a more interactive and dynamic way.
 
-If I had more time, I would continue improving this project to make it more complete and professional for my portfolio. Some of the features I’d like to add include:
+Also, I would continue improving this project to make it more complete and professional for my portfolio. Some of the features I’d like to add include:
 Including a search bar to quickly find tasks by name or keyword.
 Adding a sign-in system so each user can log in and see only their own tasks.
 Displaying a progress bar or showing a percentage of completed tasks.
